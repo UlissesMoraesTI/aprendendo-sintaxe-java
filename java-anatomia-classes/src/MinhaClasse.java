@@ -2,16 +2,17 @@ public class MinhaClasse {
 
     public static void main(String[] args) {
 
-        final String UF = "SP";
-        final String BR = "Brasil";
-        final double PI = 3.14;
-        final int ESTADOS_BRASILEIROS = 27;
-        final int ANO_2000 = 2000;
+        String primeiroNome = "Joao";
+        String segundoNome = "Pedro";
 
-        System.out.println(UF);
-        System.out.println(BR);
-        System.out.println(PI);
-        System.out.println(ESTADOS_BRASILEIROS);
-        System.out.println(ANO_2000);
+        String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
+
+        System.out.println(nomeCompleto);
+
     }
+
+    public static String nomeCompleto(String primeiroNome, String segundoNome) {
+        return primeiroNome.concat(" ").concat(segundoNome);
+    }
+
 }
